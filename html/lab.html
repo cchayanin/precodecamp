@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <title>Lab</title>
+    <style>
+        body {
+            margin: 0px 20px 0px 20px;
+            font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .tag {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .attribute {
+            text-align: center;
+        }
+
+        .notsupported {
+            color: red;
+        }
+
+        .text {
+            width: 45%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Attribute</th>
+            </tr>
+            <tr>
+                <th>Tag</th>
+                <th>Attribute</th>
+                <th>การใช้งาน Attribute</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tag">&lt;h&gt;</td>
+                <td class="attribute notsupported">align</td>
+                <td class="notsupported">ระบุการจัดวางข้อความ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;p&gt;</td>
+                <td class="attribute notsupported">align</td>
+                <td class="notsupported">ระบุการจัดวางข้อความ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;div&gt;</td>
+                <td class="attribute notsupported">align</td>
+                <td class="notsupported">ระบุการจัดวางข้อความ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+            <tr>
+                <td class="tag" rowspan="14">&lt;img&gt;</td>
+                <td class="attribute notsupported">align</td>
+                <td class="notsupported">ระบุการจัดวางข้อความ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute">alt</td>
+                <td>ระบุข้อความทางเลือกสำหรับภาพ</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">border</td>
+                <td class="notsupported">ระบุความกว้างเส้นขอบรอบรูปภาพ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute">crossorgin</td>
+                <td>ยินยอมให้ใช้รูปภาพจากภายนอกผ่านการเข้าถึงแบบ cross-origin บนแคนวาส</td>
+            </tr>
+            <tr>
+                <td class="attribute">height</td>
+                <td>ระบุความสูงของรูปภาพ</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">hspace</td>
+                <td class="notsupported">ระบุพื้นหลังขาวด้านซ้ายและขวาของรูปภาพ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute">ismap</td>
+                <td>ระบุเพื่อใช้งาน image-map ส่งไปยังฝั่งเซิร์ฟเวอร์ </td>
+            </tr>
+            <tr>
+                <td class="attribute">longdesc</td>
+                <td>ระบุ URL ที่แสดงรายละเอียดคำอธิบายของรูปภาพ</td>
+            </tr>
+            <tr>
+                <td class="attribute">sizes</td>
+                <td>ระบุขนาดของรูปภาพสำหรับการจัดวางที่แตกต่างกัน</td>
+            </tr>
+            <tr>
+                <td class="attribute">src</td>
+                <td>ระบุ URL ของรูปภาพ</td>
+            </tr>
+            <tr>
+                <td class="attribute">srcset</td>
+                <td>ระบุ URL ของรูปภาพสำหรับใช้งานในสถานการณ์ที่แตกต่างกัน</td>
+            </tr>
+            <tr>
+                <td class="attribute">usemap</td>
+                <td>ระบุเพื่อใช้งาน image-map บนฝั่งไคลเอนท์</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">vspace</td>
+                <td class="notsupported">ระบุพื้นหลังขาวด้านบนและล่างของรูปภาพ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute">width</td>
+                <td>ระบุความกว้างของรูปภาพ</td>
+            </tr>
+            </tr>
+            <tr>
+            <tr>
+                <td class="tag" rowspan="14">&lt;a&gt;</td>
+                <td class="attribute notsupported">charset</td>
+                <td class="notsupported">ระบุชุดอักขระของเอกสารที่เชื่อมโยง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">coords</td>
+                <td class="notsupported">ระบุจุดพิกัดสำหรับเชื่อมโยง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute">download</td>
+                <td>ระบุเป้าหมายที่จะดาวน์โหลดเมื่อคลิกที่ไฮเปอร์ลิงก์</td>
+            </tr>
+            <tr>
+                <td class="attribute">href</td>
+                <td>ระบุ URL ของหน้าที่จะเชื่อมโยงไป</td>
+            </tr>
+            <tr>
+                <td class="attribute">hreflang</td>
+                <td>ระบุภาษาของเอกสารที่เชื่อมโยง</td>
+            </tr>
+            <tr>
+                <td class="attribute">media</td>
+                <td>ระบุสื่อหรืออุปกรณ์เพื่อแสดงผลเอกสารที่เชื่อมโยงให้ได้ประสิทธิภาพ</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">name</td>
+                <td class="notsupported">ระบุชื่อสำหรับ anchor (แท็ก a) **HTML5 ไม่รองรับ ให้ใช้งาน id attribute
+                    แทน**
+                </td>
+            </tr>
+            <tr>
+                <td class="attribute">ping</td>
+                <td>ระบุรายการของ URL เมื่อมีเข้าผ่านลิงก์ จะส่งการร้องขอไปพร้อมกับ ping
+                    ผ่านการทำงานเบื้องหลังของเบราเซอร์ ซึ่งโดยปกติจะใช้สำหรับการติดตาม</td>
+            </tr>
+            <tr>
+                <td class="attribute">referrerpolicy</td>
+                <td>ระบุรูปแบบนโยบายการอ้างอิงที่จะส่งไป</td>
+            </tr>
+            <tr>
+                <td class="attribute">rel</td>
+                <td>ระบุความสัมพันธ์ระหว่างเอกสารปัจจุบันกับเอกสารที่เชื่อมโยง</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">rev</td>
+                <td class="notsupported">ระบุความสัมพันธ์ระหว่างเอกสารที่เชื่อมโยงกับเอกสารปัจจุบัน **HTML5
+                    ไม่รองรับ**
+                </td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">shape</td>
+                <td class="notsupported">ระบุรูปร่างของลิงก์ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute">target</td>
+                <td>ระบุตำแหน่งที่จะเปิดเอกสารเชื่อมโยง</td>
+            </tr>
+            <tr>
+                <td class="attribute">type</td>
+                <td>ระบุประเภทสื่อของเอกสารเชื่อมโยง</td>
+            </tr>
+            </tr>
+
+            <tr>
+            <tr>
+                <td rowspan="2" class="tag">&lt;ul&gt;</td>
+                <td class="attribute notsupported">compact</td>
+                <td class="notsupported">ระบุเพื่อให้ลิสต์แสดงผลมีขนาดเล็กลงกว่าปกติ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">type</td>
+                <td class="notsupported">ระบุชนิดเครื่องหมายที่ใช้ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            </tr>
+
+            <tr>
+            <tr>
+                <td rowspan="4" class="tag">&lt;ol&gt;</td>
+                <td class="attribute notsupported">compact</td>
+                <td class="notsupported">ระบุเพื่อให้ลิสต์แสดงผลมีขนาดเล็กลงกว่าปกติ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute">reversed</td>
+                <td>ระบุเพื่อเรียงลำดับแบบนับถอยหลัง</td>
+            </tr>
+            <tr>
+                <td class="attribute">start</td>
+                <td>ระบุเพื่อกำหนดค่าเริ่มต้น</td>
+            </tr>
+            <tr>
+                <td class="attribute">type</td>
+                <td>ระบุชนิดของหมายเลขด้านหน้า</td>
+            </tr>
+            </tr>
+
+            <tr>
+            <tr>
+                <td rowspan="9" class="tag">&lt;table&gt;</td>
+                <td class="attribute notsupported">align</td>
+                <td class="notsupported">ระบุการจัดตำแหน่งตารางตามข้อความที่อยู่โดยรอบ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">bgcolor</td>
+                <td class="notsupported">ระบุสีพื้นหลังของตาราง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">border</td>
+                <td class="notsupported">ระบุว่าต้องการใช้เส้นขอบของตารางหรือไม่ **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">cellpadding</td>
+                <td class="notsupported">ระบุพื้นที่ว่างระหว่างเนื้อหากับช่องตาราง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">cellspacing</td>
+                <td class="notsupported">ระบุพื้นที่ว่างระหว่างช่องตาราง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">frame</td>
+                <td class="notsupported">ระบุว่าต้องการแสดงเส้นขอบด้านนอกแบบไหนของตาราง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">rules</td>
+                <td class="notsupported">ระบุว่าต้องการแสดงเส้นขอบด้านในแบบไหนของตาราง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">summary</td>
+                <td class="notsupported">ระบุเนื้อหาสรุปของตาราง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            <tr>
+                <td class="attribute notsupported">width</td>
+                <td class="notsupported">ระบุความกว้างของตาราง **HTML5 ไม่รองรับ**</td>
+            </tr>
+            </tr>
+
+            <tr>
+            <tr>
+                <td rowspan="9" class="tag">&lt;form&gt;</td>
+                <td class="attribute notsupported">accept</td>
+                <td class="notsupported">
+                    ระบุเป็นประเภทของไฟล์สที่เซิร์ฟเวอร์ยอมรับผ่านการอัปโหลดหากมีหลายรายการสามารใช้จุลภาค(comma)คั่นได้
+                    **HTML5 ไม่รองรับ**
+                </td>
+            </tr>
+            <tr>
+                <td class="attribute">accept-charset</td>
+                <td>ระบุการเข้ารหัสอักขระที่ใช้สำหรับส่งฟอร์ม</td>
+            </tr>
+            <tr>
+                <td class="attribute">action</td>
+                <td>ระบุตำแหน่งว่าจะส่งข้อมูลไปที่ใดเมื่อส่งแบบฟอร์ม</td>
+            </tr>
+            <tr>
+                <td class="attribute">autocomplete</td>
+                <td>ระบุการเติมข้อความอัตโนมัติสำหรับฟอร์ม</td>
+            </tr>
+            <tr>
+                <td class="attribute">enctype</td>
+                <td>ระบุวิธีการเข้ารหัสข้อมูลฟอร์มเมื่อส่งไปยังเซิร์ฟเวอร์ (เฉพาะเมธอด = "โพสต์")</td>
+            </tr>
+            <tr>
+                <td class="attribute">method</td>
+                <td>ระบุ HTTP method ที่จะใช้เมื่อส่งฟอร์มข้อมูล</td>
+            </tr>
+            <tr>
+                <td class="attribute">name</td>
+                <td>ระบุชื่อของฟอร์ม</td>
+            </tr>
+            <tr>
+                <td class="attribute">novalidate</td>
+                <td>ระบุว่าฟอร์มนี้ไม่ต้องการตรวจสอบข้อมูลเมื่อส่ง</td>
+            </tr>
+            <tr>
+                <td class="attribute">target</td>
+                <td>ระบุตำแหน่งที่ต้องการแสดงผลเมื่อมีการส่งฟอร์ม</td>
+            </tr>
+            </tr>
+
+            <tr>
+            <tr>
+                <td rowspan="11" class="tag">&lt;button&gt;</td>
+                <td class="attribute">autofocus</td>
+                <td>ระบุให้ปุ่มจะเป็นจุดเริ่มต้นเมื่อโหลดหน้าเอกสาร</td>
+            </tr>
+            <tr>
+                <td class="attribute">disabled</td>
+                <td>ระบุเมื่อต้องการปิดการใช้งานปุ่ม</td>
+            </tr>
+            <tr>
+                <td class="attribute">form</td>
+                <td>ระบุว่าปุ่มเป็นของฟอร์มไหน</td>
+            </tr>
+            <tr>
+                <td class="attribute">formaction</td>
+                <td>ระบุว่าเมื่อกดปุ่มจะส่งข้อมูลฟอร์มไปยังตำแหน่งใด เฉพาะ type="sumbmit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td class="attribute">formenctype</td>
+                <td>ระบุการเข้ารหัสข้อมูลฟอร์มก่อนส่งไปเซิร์ฟเวอร์ เฉพาะ type="sumbmit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td class="attribute">formmethod</td>
+                <td>ระบุ HTTP method สำหรับส่งข้อมูลฟอร์ม เฉพาะ type="sumbmit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td class="attribute">formnovalidate</td>
+                <td>ระบุว่าไม่ต้องการตรวจสอบสำหรับข้อมูลฟอร์ม เฉพาะ type="sumbmit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td class="attribute">formtarget</td>
+                <td>ระบุตำแหน่งที่ต้องการแสดงผลหลังจากส่งข้อมูลฟอร์ม เฉพาะ type="sumbmit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td class="attribute">name</td>
+                <td>ระบุชื่อของปุ่ม</td>
+            </tr>
+            <tr>
+                <td class="attribute">type</td>
+                <td>ระบุประเภทของปุ่ม</td>
+            </tr>
+            <tr>
+                <td class="attribute">value</td>
+                <td>ระบุค่าเริ่มต้นของปุ่ม</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Differentiation Tag</th>
+            </tr>
+            <tr>
+                <th>Tag</th>
+                <th>ความเหมือน</th>
+                <th>ความแตกต่าง</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="tag">&lt;hr&gt; & &lt;br&gt;</td>
+                <td rowspan="2">เป็น Empty Tag เหมือนกัน</td>
+                <td>&lt;hr&gt; เป็นการขีดเส้นเพื่อปลี่ยนแปลงหัวข้อเรื่องหรือว่าแบ่งแยกเนื้อหาข้อมูลออกจากกัน</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt; เป็นการขึ้นบรรทัดใหม่</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="tag">&lt;ul&gt; & &lt;ol&gt;</td>
+                <td rowspan="2">เป็นการทำรายการลิสต์เหมือนกัน</td>
+                <td>&lt;ul&gt; เป็นการใช้เครื่องหมายเพื่อทำรายการแบบไม่เป็นลำดับ</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt; เป็นการใช้ตัวเลขเพื่อทำรายการแบบเป็นลำดับ</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="tag">&lt;select&gt; & checkbox & radio button</td>
+                <td rowspan="3">เป็นการเลือกข้อมูลแบบหลายตัวเลือกเหมือนกัน</td>
+                <td>&lt;select&gt; เป็นแท็กที่ใช้สำหรับข้อมูลรายการตัวเลือกแบบ drop-down</td>
+            </tr>
+            <tr>
+                <td>checkbox เป็นตัวเลือกที่แสดงการเลือกแบบติ๊กถูกเมื่อเลือกสามารถเลือกได้มากกว่าหนึ่งตัวเลือก</td>
+            </tr>
+            <tr>
+                <td>radio เป็นตัวเลือกคล้ายกับ checkbox แต่สามารถเลือกได้แค่ตัวเลือกเดียวในกลุ่มตัวเลือกเดียวกัน</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="tag">&lt;div&gt; & &lt;span&gt;</td>
+                <td rowspan="2">ใช้เพื่อเป็นกรอบหรือกำหนดส่วนภายในเอกสาร HTML</td>
+                <td>&lt;div&gt; เป็น block-level element มีการขึ้นบรรทัดใหม่เมื่อมีการใช้งาน</td>
+            </tr>
+            <tr>
+                <td>&lt;span&gt; เป็น inline element จะไม่มีการขึ้นบรรทัดใหม่เมื่อมีการใช้งาน</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="tag">&lt;script&gt; & &lt;style&gt;</td>
+                <td rowspan="2">ใช้เพื่อแทรกภาษาอื่นที่ไม่ใช่แท็ก HTML ภายในเอกสาร</td>
+                <td>&lt;script&gt; ใช้เพื่อแทรกภาษาจาวาสคริปต์</td>
+            </tr>
+            <tr>
+                <td>&lt;span&gt; ใช้เพื่อแทรกคำสั่ง css</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">INPUT TYPE</th>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <th>Desciption</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tag">button</td>
+                <td>ทำให้เป็นแบบปุ่มกด</td>
+            </tr>
+            <tr>
+                <td class="tag">checkbox</td>
+                <td>ทำให้เป็นตัวเลือกแบบ checkbox</td>
+            </tr>
+            <tr>
+                <td class="tag">color</td>
+                <td>ทำให้เป็นแบบตัวเลือกสี</td>
+            </tr>
+            <tr>
+                <td class="tag">date</td>
+                <td>ทำให้เป็นตัวควบคุมการกรอกวันที่(ไม่มีเวลา)</td>
+            </tr>
+            <tr>
+                <td class="tag">datetime-local</td>
+                <td>ทำให้เป็นตัวควบคุมการกรอกวันที่และเวลา(ไม่มี timezone)</td>
+            </tr>
+            <tr>
+                <td class="tag">email</td>
+                <td>ทำให้เป็นช่องกรอก email address</td>
+            </tr>
+            <tr>
+                <td class="tag">file</td>
+                <td>ทำให้เป็นตัวเลือกอัปโหลดไฟล์</td>
+            </tr>
+            <tr>
+                <td class="tag">hidden</td>
+                <td>ทำให้ซ่อนช่องสำหรับกรอก</td>
+            </tr>
+            <tr>
+                <td class="tag">image</td>
+                <td>ทำให้รูปภาพแทนที่ปุ่ม submit และส่งค่าพิกัดเมื่อคลิกที่รูปภาพ</td>
+            </tr>
+            <tr>
+                <td class="tag">month</td>
+                <td>ทำให้เป็นตัวควบคุมการกรอกเดือนและปี(ไม่มี timezone)</td>
+            </tr>
+            <tr>
+                <td class="tag">number</td>
+                <td>ทำให้เป็นช่องกรอกตัวเลข สามารถจำกัดค่าต่ำสุด-สูงสุดได้</td>
+            </tr>
+            <tr>
+                <td class="tag">password</td>
+                <td>ทำให้เป็นช่องกรอกรหัสผ่าน</td>
+            </tr>
+            <tr>
+                <td class="tag">radio</td>
+                <td>ทำให้เป็นตัวเลือกแบบ radio button</td>
+            </tr>
+            <tr>
+                <td class="tag">range</td>
+                <td>ทำให้เป็นตัวเลือกค่าตัวเลขแบบ slider</td>
+            </tr>
+            <tr>
+                <td class="tag">reset</td>
+                <td>ทำให้เป็นปุ่มสำหรับรีเซ็ตค่า</td>
+            </tr>
+            <tr>
+                <td class="tag">search</td>
+                <td>ทำให้เป็นช่องสำหรับค้นหา</td>
+            </tr>
+            <tr>
+                <td class="tag">submit</td>
+                <td>ทำให้เป็นปุ่มสำหรับส่งข้อมูล</td>
+            </tr>
+            <tr>
+                <td class="tag">tel</td>
+                <td>ทำให้เป็นช่องสำหรับกรอกเลขโทรศัพท์</td>
+            </tr>
+            <tr>
+                <td class="tag">text</td>
+                <td>ทำให้เป็นช่องกรอกข้อความ</td>
+            </tr>
+            <tr>
+                <td class="tag">time</td>
+                <td>ทำให้เป็นตัวควบคุมการกรอกเวลา(ไม่มี timezone)</td>
+            </tr>
+            <tr>
+                <td class="tag">url</td>
+                <td>ทำให้เป็นช่องสำหรับกรอก URL</td>
+            </tr>
+            <tr>
+                <td class="tag">week</td>
+                <td>ทำให้เป็นตัวควบคุมการกรอกสัปดาห์และปี</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th colspan="3">TEXT</th>
+        </tr>
+        <tr>
+            <td class="text"><strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam cum ratione fugit
+                    iusto
+                    mollitia sequi
+                    quaerat, ipsa suscipit quidem, vel consequuntur dignissimos. Itaque architecto quod voluptate
+                    dignissimos
+                    accusamus aperiam veritatis!</strong></td>
+            <td class="tag">strong</td>
+            <td class="text">กำหนดข้อความสำคัญ</td>
+        </tr>
+        <tr>
+            <td><label for="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam cum ratione fugit iusto
+                    mollitia
+                    sequi quaerat,</label></td>
+            <td class="tag">label</td>
+            <td class="text">กำหนดป้ายกำกับสำหรับ button, input, meter, output, progress, select หรือtextarea</td>
+        </tr>
+        <tr>
+            <td><del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit libero magni aliquid, dolores
+                    nobis tempore
+                    adipisci alias enim blanditiis provident voluptatem officia tempora eligendi quasi odio consequatur
+                    velit ipsum
+                    architecto.
+                    quaerat,</del></td>
+            <td class="tag">del</tdc>
+            <td class="text">กำหนดข้อความที่ขีดฆ่า</td>
+        </tr>
+        <tr>
+            <td><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, incidunt eaque id nulla ad nobis
+                    placeat
+                    quibusdam doloribus commodi eos dolore ullam maxime reiciendis eius unde facilis cumque possimus
+                    beatae.</b></td>
+            <td class="tag">b</td>
+            <td class="text">กำหนดข้อความให้เป็นตัวหนา แสดงผลเหมือน strong</td>
+        </tr>
+        <tr>
+            <td><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quas dignissimos similique sed nihil
+                    illum,
+                    quaerat in officiis quis eveniet ipsam tenetur minus? Provident esse cum similique numquam ipsa
+                    placeat.</em></td>
+            <td class="tag">em</td>
+            <td class="text">กำหนดข้อความที่แสดงเป็นข้อความที่มีการเน้น</td>
+        </tr>
+        <tr>
+            <td><mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo mollitia eaque ipsa
+                    delectus! Officiis
+                    ipsam velit dolores quas architecto consectetur dignissimos, reprehenderit cupiditate, impedit
+                    quibusdam facere
+                    labore. Beatae, iure.</mark></td>
+            <td class="tag">mark</td>
+            <td class="text">กำหนดให้ทำเครื่องหมายข้อความโดยการไฮไลท์</td>
+        </tr>
+        <tr>
+            <td><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nesciunt mollitia! Architecto hic ad
+                    dolor!
+                    Aspernatur, eius est quibusdam nam dolorem vitae officia placeat cupiditate quas sapiente libero
+                    assumenda
+                    illum!</i></td>
+            <td class="tag">i</td>
+            <td class="text">กำหนดให้ข้อความเป็นตัวเอียง แสดงผลเหมือน emphasized</td>
+        </tr>
+        <tr>
+            <td><sub>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut, doloremque ipsam asperiores
+                    ipsa maxime
+                    et veniam dolore maiores quos labore quasi quaerat hic recusandae beatae fugit, aperiam iusto
+                    inventore.</sub></td>
+            <td class="tag">sub</td>
+            <td class="text">กำหนดให้ข้อความเป็นตัวห้อย</td>
+        </tr>
+        <tr>
+            <td><sup>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quae excepturi ipsa eaque fugiat
+                    minus
+                    similique delectus, error recusandae, obcaecati nostrum nam nisi rerum a aspernatur eligendi
+                    veritatis
+                    quibusdam. Dolore.</sup></td>
+            <td class="tag">sup</td>
+            <td class="text">กำหนดให้ข้อความเป็นตัวยก</td>
+        </tr>
+    </table>
+</body>
+
+</html>
