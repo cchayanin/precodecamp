@@ -1,0 +1,125 @@
+body {
+  margin: 20px 20px;
+  font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+}
+/*------------------------------------*/
+.tooltip {
+  position: relative; /*วางตำแหน่งแบบ relative เพื่อที่สามารถระบุพิกัดได้*/
+  display: inline-block; /*เพื่อจัดการแสดงผล block ให้มีขนาดเท่ากับเนื้อหา*/
+  font-weight: bold; /*แสดงผลข้อความเป็นตัวหนา*/
+  border-bottom: 1px dotted black; /*ขีดเส้นประสีดำขนาด 1px ใต้ข้อความ*/
+}
+
+.tooltip .tooltipText {
+  /*แสดงผล tooltipText ทั้งหมดที่อยู่ภายใต้ tooltip*/
+  visibility: hidden; /*ซ่อนข้อความ tooltip*/
+  width: 120px; /*ความกว้างกล่อง tooltip*/
+  background-color: gray; /*พื้นหลังกล่องสีเทา*/
+  color: white; /*ตัวหนังสือสีขาว*/
+  text-align: center; /*ข้อความจัดกึ่งกลาง*/
+  border-radius: 6px; /*ทำให้มุมขอบมน*/
+  padding: 5px 0px; /*เว้นระยะห่างบนล่าง 5px ซ้ายขวา 0px*/
+  position: absolute; /*วางตำแหน่งแบบ absolute เพื่อให้เป็นอิสระ โดยอ้างอิงตำแหน่งจาก parent*/
+  z-index: 1; /*กำหนดตำแหน่งกรณีซ้อนทับ ให้แสดงข้อความด้านหน้า*/
+  bottom: 100%; /*แสดงตำแหน่ง tooltip ด้านบนข้อความ*/
+  left: 25%; /*แสดงตำแหน่ง tooltip เยื้องไปทางขวาข้อความ*/
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible; /*เมื่อวางเมาส์ไว้บนความให้แสดง tooltip*/
+}
+/*------------------------------------*/
+.pagination {
+  display: inline-block; /*เพื่อจัดการแสดงผล block ให้มีขนาดเท่ากับเนื้อหา*/
+}
+
+.pagination a {
+  color: black; /*แสดงตัวหนังสือสีดำ*/
+  float: left; /*เพื่อให้ tag a ลอยไปชิดฝั่งซ้าย*/
+  padding: 8px 16px; /*เว้นระยะห่างบนล่าง 8px ซ้ายขวา 16px*/
+  text-decoration: none; /*ไม่ต้องตกแต่งข้อความ เพื่อไม่ให้ tag a ขีดเส้นใต้ลิงก์*/
+}
+
+.pagination a.active {
+  /*เมื่อมีการ active ลิงก์*/
+  background-color: #448c04; /*แสดงพื้นหลังตามค่าสี*/
+  color: white; /*แสดงตัวหนังสือสีขาว*/
+  border-radius: 5px; /*ทำให้มุมขอบมน*/
+}
+
+.pagination a:hover:not(.active) {
+  /*เมื่อมีการชี้เมาส์ไปที่ลิงก์อื่น แต่ไม่ได้ใช่ active*/
+  background-color: gainsboro; /*แสดงพื้นหลังตามค่าสี*/
+  border-radius: 5px; /*ทำให้มุมขอบมน*/
+}
+/*------------------------------------*/
+ul {
+  list-style-type: none; /*ไม่แสดงเครื่องหมายหน้าข้อความ*/
+  margin: 0; /*แสดงผลชิดขอบ parent*/
+  padding: 0; /*ไม่เว้นช่องว่างระหว่างเนื้อหากับกรอบ*/
+  overflow: hidden; /*ซ่อนหากมีการล้นออกมานอกกล่อง*/
+  background-color: #333; /*แสดงพื้นหลังตามค่าสี*/
+}
+
+li {
+  float: left; /*เพื่อให้ tag li ลอยไปชิดฝั่งซ้าย*/
+}
+
+li a {
+  display: block; /*แสดงผล tag a เป็น block*/
+  color: white; /*แสดงตัวหนังสือสีขาว*/
+  text-align: center; /*จัดข้อความกึ่งกลาง*/
+  padding: 14px 16px; /*เว้นระยะห่างบนล่าง 14px ซ้ายขวา 16px*/
+  text-decoration: none; /*ไม่ตกแต่งข้อความ เพื่อไม่ให้ tag มีการขีดเส้นใต้*/
+}
+
+li a:hover:not(.active) {
+  /*เมื่อเอาเมาส์ไปวางไว้บน tag a ที่ไม่ active*/
+  background-color: #111; /*แสดงพื้นหลังตามค่าสี*/
+}
+
+.active {
+  background-color: #4caf50; /*แสดงพื้นหลังตามค่าสีเมื่อมีการ active*/
+}
+
+/*------------------------------------*/
+
+.dropdown {
+  display: inline-block; /*เพื่อจัดการแสดงผล block ให้มีขนาดเท่ากับเนื้อหา*/
+}
+
+.dropbtn {
+  color: white; /*แสดงตัวหนังสือสีขาว*/
+  background-color: teal; /*แสดงพื้นหลังตามค่าสี*/
+  text-align: center; /*จัดข้อความกึ่งกลาง*/
+  padding: 14px 16px; /*เว้นระยะห่างบนล่าง 14px ซ้ายขวา 16px*/
+  text-decoration: none; /*ไม่ตกแต่งข้อความ เพื่อไม่ให้ tag มีการขีดเส้นใต้*/
+}
+
+.dropdown-content {
+  display: none; /*ไม่แสดงเนื้อหาที่ซ่อนอยู่*/
+  position: absolute; /*วางตำแหน่งแบบ absolute เพื่อให้เป็นอิสระ โดยอ้างอิงตำแหน่งจาก parent*/
+  background-color: #f9f9f9; /*แสดงพื้นหลังตามค่าสี*/
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /*แสดงผลเงา*/
+  z-index: 1; /*กำหนดตำแหน่งกรณีซ้อนทับ ให้แสดงข้อความด้านหน้า*/
+  min-width: 160px; /*ความกว้างขั้นต่ำ 160px*/
+}
+
+.dropdown-content a {
+  /*การแสดงผลข้อความที่ซ่อนอยู่*/
+  color: black; /*แสดงตัวหนังสือสีดำ*/
+  padding: 12px 16px; /*เว้นระยะห่างบนล่าง 12px ซ้ายขวา 16px*/
+  text-decoration: none; /*ไม่ตกแต่งข้อความ เพื่อไม่ให้ tag มีการขีดเส้นใต้*/
+  display: block; /*แสดงผลแบบ block*/
+  text-align: left; /*จัดข้อความชิดซ้าย*/
+}
+
+.dropdown .dropdown-content a:hover {
+  /*เมื่อวางเมาส์ไว้บนเนื้อหาที่ซ่อนอยู่*/
+  background-color: slategrey; /*แสดงพื้นหลังตามค่าสี*/
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /*แสดงผลแบบ block*/
+}
