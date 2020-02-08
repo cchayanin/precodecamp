@@ -6,4 +6,5 @@ CodeCamp#5
 ## การบ้าน
 
 [Lab HTML](https://github.com/cchayanin/precodecamp/blob/master/html/lab.html)
-[Navigation](https://github.com/cchayanin/precodecamp/blob/master/navigation)
+
+[Lab Navigation](https://github.com/cchayanin/precodecamp/blob/master/navigation)
