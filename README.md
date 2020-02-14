@@ -9,4 +9,6 @@ CodeCamp#5
 
 [Lab Navigation](https://github.com/cchayanin/precodecamp/blob/master/navigation)
 
+[Lab Layout](https://github.com/cchayanin/precodecamp/blob/master/layout)
+
 [Lab OOP](https://github.com/cchayanin/precodecamp/blob/master/OOP/oop.js)
