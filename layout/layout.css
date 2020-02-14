@@ -1,0 +1,141 @@
+body {
+  margin: 1%;
+  font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+}
+.head {
+  width: 100%;
+  height: 15vh;
+  color: black;
+  text-align: center;
+  background-color: bisque;
+}
+.foot {
+  width: 100%;
+  height: 15vh;
+  color: white;
+  text-align: center;
+  background-color: blueviolet;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  float: left;
+  text-decoration: none;
+}
+
+.menu a:hover:not(.active) {
+  background-color: #111;
+}
+
+.menu .active {
+  background-color: #4caf50;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 1vh 1vw;
+  background-color: blue;
+}
+
+main #sidebar {
+  display: inline-block;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #999;
+}
+main #sidebar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+main #sidebar a:hover:not(.active) {
+  background-color: #111;
+}
+
+main #sidebar .active {
+  background-color: #4caf50;
+}
+main #content {
+  display: inline-block;
+  width: 80%;
+  right: 0;
+  background-color: lime;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+}
+
+.flex-item {
+  display: block;
+  width: 90%;
+  background-color: aquamarine;
+  border: 1px dotted violet;
+  text-align: center;
+}
+
+.flex-image {
+  display: block;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 150px;
+  border: 1px solid cornflowerblue;
+}
+
+.grid-container {
+  display: grid;
+  padding: 1vh 1vw;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  height: 80vh;
+}
+
+.grid-item {
+  align-content: center;
+  text-align: center;
+  background-color: orchid;
+}
+
+.grid-image {
+  display: block;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid cornflowerblue;
+}
+
+.layout a {
+  display: block;
+  text-align: center;
+}
+.layout img {
+  display: block;
+  border: 2px solid magenta;
+  margin: auto;
+  width: 800px;
+  height: 600px;
+}
