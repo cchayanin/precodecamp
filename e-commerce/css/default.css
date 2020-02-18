@@ -1,0 +1,101 @@
+:root {
+  --font: hsl(0, 100%, 60%);
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: var(--font);
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu nav {
+  padding: 0.5em 0;
+  display: flex;
+}
+
+#menu nav a {
+  text-decoration: none;
+  padding: 0 1em;
+  color: var(--font);
+}
+
+#menu nav a:hover {
+  text-transform: uppercase;
+}
+
+#nav-brand {
+  display: flex;
+}
+
+#nav-brand a {
+  text-decoration: none;
+  padding: 0 1em;
+  font-size: 1.5em;
+  color: var(--font);
+}
+
+#nav-content {
+  display: flex;
+}
+
+#nav-content nav {
+  padding: 0.5em 0;
+}
+
+#nav-content nav a {
+  text-decoration: none;
+  padding: 0 1em;
+  color: var(--font);
+}
+
+#cover img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  height: 40vh;
+}
+
+#store {
+  margin: 2vh 0 0 0;
+}
+
+#store div h2 {
+  margin: 5vh auto 3vh auto;
+}
+
+#product {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#product div a {
+  text-decoration: none;
+  color: var(--font);
+}
+
+#product div a img {
+  width: 400px;
+  height: 400px;
+}
+
+#product div a img:hover {
+  transform: scale(1.03);
+}
+
+#product div a p {
+  margin-top: 0;
+  text-align: right;
+}
+
+#product div a > p {
+  margin-bottom: 5vh;
+}
