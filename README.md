@@ -12,3 +12,5 @@ CodeCamp#5
 [Lab Layout](https://github.com/cchayanin/precodecamp/blob/master/layout)
 
 [Lab OOP](https://github.com/cchayanin/precodecamp/blob/master/OOP/oop.js)
+
+[CC106 Workshop](https://github.com/cchayanin/precodecamp/tree/master/e-commerce)
